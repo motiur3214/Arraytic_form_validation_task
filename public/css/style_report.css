@@ -1,0 +1,135 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    color: #4CAF50;
+}
+
+#filterForm {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto 20px;
+}
+
+#filterForm div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+#filterForm label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    width: auto;
+    white-space: nowrap;
+}
+
+#filterForm input[type="date"],
+#filterForm input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 150px;
+    margin-right: 10px;
+}
+
+#filterForm button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto;
+    display: block;
+}
+
+
+#filterForm button:hover {
+    background-color: #0056b3;
+}
+
+#filterForm > div {
+    flex: 1 1 auto;
+    min-width: 150px;
+}
+
+
+table {
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table thead {
+    background-color: #4CAF50;
+    color: white;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+table th {
+    text-transform: uppercase;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+table td {
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+table td.limit-hash {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100px;
+    cursor: pointer;
+    position: relative;
+}
+
+table td.limit-hash:hover::after {
+    content: attr(title);
+    position: absolute;
+    left: 0;
+    bottom: -1.5em;
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 3px;
+    white-space: nowrap;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+@media (max-width: 768px) {
+    form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
