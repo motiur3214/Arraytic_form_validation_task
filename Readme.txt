@@ -14,8 +14,8 @@
    - Start your server.
 
 3. **Accessing the Project**:
-   - Form Page: http://localhost/my_php_project/public/
-   - Report Page: http://localhost/my_php_project/public/report.php
+   - Form Page: http://localhost/Arraytic_form_validation_task/public/
+   - Report Page: http://localhost/Arraytic_form_validation_task/public/report
 
 4. **Additional Notes**:
    - Ensure you have the necessary PHP extensions enabled (e.g., PDO for MySQL).
