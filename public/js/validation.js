@@ -48,12 +48,12 @@ $(document).ready(function () {
             return;
         }
 
-        // // Prevent multiple submissions within 24 hours
-        // if (document.cookie.indexOf('submitted=true') != -1) {
-        //     alert('You have already submitted the form. Please try again after 24 hours.');
-        //     e.preventDefault();
-        // } else {
-        //     document.cookie = "submitted=true; max-age=86400"; // 24 hours in seconds
-        // }
+        // Prevent multiple submissions within 24 hours
+        if (document.cookie.indexOf('submitted=true') !== -1) {
+            alert('You have already submitted the form. Please try again after 24 hours.');
+            e.preventDefault();
+        } else {
+            document.cookie = "submitted=true; max-age=86400"; // 24 hours in seconds
+        }
     });
 });
